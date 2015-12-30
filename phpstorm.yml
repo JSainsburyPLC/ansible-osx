@@ -1,0 +1,12 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install phpstorm
+      mac_pkg:
+        pkg_type: app
+        url: https://download.jetbrains.com/webide/PhpStorm-10.0.2-custom-jdk-bundled.dmg
+        archive_type: dmg
+        archive_path: 'PhpStorm.app'
+      sudo: yes
+
