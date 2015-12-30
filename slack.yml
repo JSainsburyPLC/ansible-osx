@@ -1,0 +1,12 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install slack
+      mac_pkg:
+        url: https://slack.com/ssb/download-osx
+        pkg_type: app
+        archive_type: zip
+        archive_path: Slack.app
+      sudo: yes
+

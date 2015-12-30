@@ -1,0 +1,10 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install tunnelblick
+      mac_pkg: pkg_type=app pkg_name=com.tunnelblick.tunnelblick pkg_version=3.5.5
+               url=https://tunnelblick.net/release/Tunnelblick_3.5.5_build_4270.4461.dmg
+               archive_type=dmg archive_path=Tunnelblick.app
+      sudo: yes
+

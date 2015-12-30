@@ -4,6 +4,6 @@
   tasks:
     - name: install charles
       mac_pkg: pkg_type=app
-               url=http://www.charlesproxy.com/assets/release/3.10.1/charles-proxy-3.10.1.dmg
+               url=http://www.charlesproxy.com/assets/release/3.11.2/charles-proxy-3.11.2.dmg
                archive_type=dmg archive_path='Charles.app'
       sudo: yes
